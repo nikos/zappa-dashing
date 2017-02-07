@@ -1,0 +1,6 @@
+{
+    "dev": {
+        "app_function": "server.app", 
+        "s3_bucket": "dashing-lambdas"
+    }
+}
