@@ -11,7 +11,7 @@ and is made possible thanks to:
 
 
 To get an better idea on what you can expect, here is an example screenshot:
-[Screenshot of zappa-dashing](http://imgur.com/a/w05Y3)
+![Screenshot of zappa-dashing](http://imgur.com/a/w05Y3)
 
 *Note:* Since AWS Lambda does not support Python 3 yet, we have to use Python 2(.7) when
 working with the Flask app resp. deploying it with the help of zappa.
