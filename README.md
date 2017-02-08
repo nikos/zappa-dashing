@@ -14,7 +14,6 @@ To get an better idea on what you can expect, here is an example screenshot:
 
 ![Screenshot of zappa-dashing](http://i.imgur.com/vRFYJoGr.png)
 
-
 *Note:* Since AWS Lambda does not support Python 3 yet, we have to use Python 2(.7) when
 working with the Flask app resp. deploying it with the help of zappa.
 
@@ -43,9 +42,13 @@ with the regions you setup in the previous settings files.
 
 ## Initial Deployments
 
-To install zappa on AWS lambda initially  	
+To install the `dev` environment on AWS Lambda with the help of zappa initially:
 
 	$ zappa deploy dev  
+
+As soon as the ZIP is packaged and uploaded, the code will be deployed as AWS Lambda function and
+the endpoints registered with the AWS API gateway. When finished you will receive a URL to
+access your function.
 
 
 ## Development Workflow
@@ -53,11 +56,11 @@ To install zappa on AWS lambda initially
 Test on your local machine:
 
 	$ source venv/bin/activate
-	$ ./stats.py
+	$ ./server.py
 
 Open your browser and visit [http://localhost:5000](http://localhost:5000).
 
-Once you are satisfied and happy with the results, you might want to deploy to AWS Lambda with
+Once you are happy with the results, you might want to deploy to AWS API Gateway + Lambda with
 the help of:
 
 	$ zappa update dev
@@ -65,7 +68,7 @@ the help of:
 
 ## Further helpful commands
 
-Show access log of `dev` environment:
+Show access log for the `dev` environment:
 
     zappa tail dev --http
 
@@ -76,5 +79,5 @@ Leave virtual environment:
 
 ## Contribution 
 
-Contributions are more than welcome, please file an issue or even better provide submit a
+Contributions are more than welcome, please file an issue or even better submit a
 pull request :-)
