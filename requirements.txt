@@ -22,7 +22,7 @@ pyparsing==2.1.10
 python-dateutil==2.6.0
 python-slugify==1.2.1
 PyYAML==3.12
-requests==2.13.0
+requests==2.20.0
 s3transfer==0.1.10
 six==1.10.0
 toml==0.9.2
