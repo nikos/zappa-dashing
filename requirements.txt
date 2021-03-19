@@ -11,7 +11,7 @@ Flask-Cors==3.0.2
 futures==3.0.5
 hjson==2.0.2
 itsdangerous==0.24
-Jinja2==2.9.5
+Jinja2==2.11.3
 jmespath==0.9.1
 kappa==0.6.0
 lambda-packages==0.13.0
