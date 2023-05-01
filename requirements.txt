@@ -6,7 +6,7 @@ botocore==1.5.7
 click==6.7
 docutils==0.13.1
 durationpy==0.3
-Flask==1.0
+Flask==2.3.2
 Flask-Cors==3.0.9
 futures==3.0.5
 hjson==2.0.2
